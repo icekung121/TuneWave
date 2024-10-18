@@ -1,13 +1,13 @@
 require("dotenv").config();
 
 module.exports = {
-    token: process.env.TOKEN || "MTExMDc4NzU3MzA0MDgxMjA0Mg.GWaCb8.talRIACc_RaHQ5Fp1hcqULV9oZ4bPqgv7vtAcQ",
-    clientID: process.env.CLIENT_ID || "1110787573040812042", 
-    prefix: process.env.PREFIX || "/", 
-    ownerID: process.env.OWNER_ID || "219004158223712258",
-    SpotifyID: process.env.SPOTIFY_ID || "bb4ea365589a4f329cf83de1bc4e9296",
-    SpotifySecret: process.env.SPOTIFY_SECRET || "7f909e2713e44474b40a66027a527826",
-    mongourl: process.env.MONGO_URL || "https://github.com/icekung121/TuneWave/",
+    token: process.env.TOKEN || "",
+    clientID: process.env.CLIENT_ID || "", 
+    prefix: process.env.PREFIX || ".", 
+    ownerID: process.env.OWNER_ID || "",
+    SpotifyID: process.env.SPOTIFY_ID || "",
+    SpotifySecret: process.env.SPOTIFY_SECRET || "",
+    mongourl: process.env.MONGO_URL || "",
     embedColor: process.env.EMBED_COLOR || 0xcc0000,
     logs: process.env.LOGS || "",
     errorLogsChannel: process.env.ERROR_LOGS_CHANNEL || "",
@@ -21,9 +21,9 @@ module.exports = {
     },
     nodes: [
         {
-            host: process.env.NODE_HOST || "neko.pylex.xyz",
-            port: parseInt(process.env.NODE_PORT || "10068"),
-            password: process.env.NODE_PASSWORD || "youshallnotpass",
+            host: process.env.NODE_HOST || "",
+            port: parseInt(process.env.NODE_PORT || ""),
+            password: process.env.NODE_PASSWORD || "",
             secure: parseBoolean(process.env.NODE_SECURE || "false"),
         }
     ],
