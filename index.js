@@ -1,4 +1,5 @@
 const { EmbedBuilder, ActionRowBuilder, ButtonStyle, StingSelectMenuBuilder, Events, ButtonBuilder, editEmbed, Collection } = require("discord.js");
+const keep_alive = require('./keep_alive.js')
 const MusicBot = require("./structures/Client");
 const client = new MusicBot();
 const GiveawayManager = require("./handlers/GiveawayManager");
